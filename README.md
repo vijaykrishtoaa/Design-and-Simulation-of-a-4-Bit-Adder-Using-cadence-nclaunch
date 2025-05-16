@@ -61,6 +61,37 @@ module adder_4bit (
     full_adder FA3 (A[3], B[3], C3, Sum[3], Cout);
 endmodule
 ```
+## Verilog Testbench Code for 1-Bit Full Adder
+```verilog
+`timescale 1ns/1ps
+
+module tb_adder_4bit;
+    reg [3:0] A, B;
+    reg Cin;
+    wire [3:0] Sum;
+    wire Cout;
+
+    // Instantiate the 4-bit adder
+    adder_4bit UUT (
+        .A(A), .B(B), .Cin(Cin),
+        .Sum(Sum), .Cout(Cout)
+    );
+
+    initial begin
+               
+        // Test cases
+        A = 4'b0000; B = 4'b0000; Cin = 0; #10;
+        A = 4'b0011; B = 4'b0101; Cin = 0; #10;
+        A = 4'b1111; B = 4'b0001; Cin = 0; #10;
+        A = 4'b1010; B = 4'b0101; Cin = 1; #10;
+        A = 4'b1111; B = 4'b1111; Cin = 1; #10;
+
+        $finish;
+    end
+endmodule
+
+```
+
 ## Truth Table for 4-Bit Full Adder
 
 ![image](https://github.com/user-attachments/assets/5b5083dc-3c4c-484b-bc07-28f16cda1139)
