@@ -94,12 +94,7 @@ endmodule
 
 ## Truth Table for 4-Bit Full Adder
 
-Time    A     B     Cin  |  Sum   Cout
-0ns     0000  0000   0    | 0000   0
-10ns    0011  0101   0    | 1000   0
-20ns    1111  0001   0    | 0000   1
-30ns    1010  0101   1    | 0000   1
-40ns    1111  1111   1    | 1111   1
+![image](https://github.com/user-attachments/assets/567af4cf-875d-448b-b616-40e450d5bbde)
 
 
 ## Simulation Results
