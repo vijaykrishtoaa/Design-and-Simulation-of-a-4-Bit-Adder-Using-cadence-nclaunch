@@ -94,7 +94,13 @@ endmodule
 
 ## Truth Table for 4-Bit Full Adder
 
-![image](https://github.com/user-attachments/assets/5b5083dc-3c4c-484b-bc07-28f16cda1139)
+Time    A     B     Cin  |  Sum   Cout
+0ns     0000  0000   0    | 0000   0
+10ns    0011  0101   0    | 1000   0
+20ns    1111  0001   0    | 0000   1
+30ns    1010  0101   1    | 0000   1
+40ns    1111  1111   1    | 1111   1
+
 
 ## Simulation Results
 ### Simulation Waveforms
