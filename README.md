@@ -63,8 +63,6 @@ endmodule
 ```
 ## Verilog Testbench Code for 1-Bit Full Adder
 ```verilog
-`timescale 1ns/1ps
-
 module tb_adder_4bit;
     reg [3:0] A, B;
     reg Cin;
