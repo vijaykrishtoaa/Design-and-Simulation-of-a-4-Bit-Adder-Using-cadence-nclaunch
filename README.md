@@ -45,7 +45,7 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/0ea58111-49fb-49a4-ad6a-ee36cbf4e479)
 
-## Verilog Code for 1-Bit Full Adder
+## Verilog Code for 4-Bit Ripple carry Adder
 ```verilog
 module adder_4bit (
     input [3:0] A, B,
